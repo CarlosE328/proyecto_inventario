@@ -1,0 +1,38 @@
+1-Inventario
+ *Numero Id de producto 
+ *Descontar cada venta del inventario
+ *Dar de alta nuevos productos
+ *Llevar un control de las compras con fecha proyectada de  llegada 
+2-Reporte de Ventas
+  *Debe de estar conectado al inventario
+  *Llevar un control de producto separado y producto pendiente  por enviar
+3-Reporte de Ganancias
+  *A traves del reporte de Ventas, poder estar elaborando un    reporte de Ganancias semanal, mensual y anual 
+4-Elaborar un sistema de puntaje para compras
+  Dependiendo de:
+  *Periodo de tiempo en el que se vendio
+  *Margen de ganancia con el que se vendio
+  *Costo del producto
+  *Ganancia total del producto(Considerando que no es lo mismo    vender algo de $20 a $30 que un producto de $1,000 a $1,500)
+
+*sqlite
+Agregar item
+Quitar item
+Buscar item
+mostrar items
+
+Descripcion de item (Pisos, Sanitarios, lavabos, Accesorios)
+
+Pisos y vistas o decorados
+Marca, Modelo, Color, Proveedor, Medidas, precio sugerido mt², precio mt², cantidad de mts p/caja, precio de caja, costo de caja, calidad, existencia, producto ya vendido, producto en camino
+
+Sanitarios y Lavabos
+
+Marca, Modelo, Color, Proveedor, Precio, Costo, Calidad, existencia, producto ya vendido, producto en camino
+
+Accesorios
+
+Marca, Modelo, Precio, Costo, Proveedor,producto ya vendido, producto en camino 
+
+
+
