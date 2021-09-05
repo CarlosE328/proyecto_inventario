@@ -1,0 +1,2 @@
+
+void act_stub();
