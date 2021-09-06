@@ -34,5 +34,60 @@ Accesorios
 
 Marca, Modelo, Precio, Costo, Proveedor,producto ya vendido, producto en camino 
 
+Estructura Pisos
+1-Modelo
+2-Marca (*Seleccionar de un array)
+3-Metros por caja
+4-Medidas(Ancho, Alto)
+5-Color
+6-Acabado(Antiderrapante, Brilloso, Mate, Semibrilloso y Ceroso)
+7-Calidad (1ra, 2da y 3ra)
+8-Tipo de piso (Piso Ceramico, Porcelanato, Piso de baño, Azulejo, Veneciano)
+9-Proveedor (*Seleccionar de un array)
+10-Costo por caja (antes de iva)
+
+struct PISOS {
+   string Modelo;
+   string Marca;
+   double Mxcaja;
+   double Ancho;
+   double Alto;
+   string Color;
+   String Acabado;
+   int Calidad;
+   string Tipopiso;
+   string Proveedor;
+   double Costo;
+   
+
+};
+
+Estructura Piezas Decorativas (Mallas, Cenefas, Ceramico 3D, Decorado, Tiras de aluminio, de pvc, separadores, etc.)
+1-Modelo
+2-Marca
+3-Piezas por caja
+4-Medidas
+5-Color
+6-Acabado
+7-Tipo de Pieza (Mallas, Cenefas, Ceramico 3D, Decorado)
+8-Proveedor
+9-Costo por pieza antes de Iva
+
+Estructura Sanitarios y Lavabos (Acce., Asientos, Regaderas, mezcladoras, etc.)
+1-Modelo
+2-Marca
+3-Color
+4-Proveedor
+5-Calidad
+6-Costo por pieza antes de Iva
+
+Estructura Quimicos para alberca
+1- Modelo o Nombre del producto
+2- Cantidad por pieza (lts., kgs.)
+3- Marca
+4- Proveedor
+5- Costo por pieza antes de iva
+
+
 
 
