@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<sqlite3.h>
 #include"Actions/action.hpp"
 
 /*definiciones constantes*/
