@@ -1,10 +1,6 @@
 #include<iostream>
-<<<<<<< HEAD
-#include "Actions/action.hpp"
-
-
-=======
 #include<string>
+#include"Actions/action.hpp"
 
 /*definiciones constantes*/
 typedef enum act_inv{
@@ -100,7 +96,6 @@ void display_all()
 {    
     update_inventory(MOSTRAR, current);
 }
->>>>>>> master
 
 
 int main()
