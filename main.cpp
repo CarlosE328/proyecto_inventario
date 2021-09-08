@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include"Actions/action.hpp"
 
 /*definiciones constantes*/
 typedef enum act_inv{
@@ -101,7 +102,7 @@ int main()
 {
 
     std::cout<<" \n****INVENTORY***** \n" <<std::endl;
-    std::cout<<"1) Add new item" <<std::endl;
+    act_stub();
     std::cout<<"2) Remove item" <<std::endl;
     std::cout<<"3) Search item"<<std::endl;
     std::cout<<"4) Display all items"<<std::endl;
