@@ -2,23 +2,19 @@
 #include <stdio.h>
 #include<sqlite3.h>
 
-// function declarations
-static int createDB(const char* s);
-static int createTable(const char* s);
 
 
 // function definitions
-static int createDB(const char* s)
+int createDB(const char* s)
 {
-    //Database declaration
-    sqlite3* DB;
-    int result =0;
-    result = sqlite3_open(s, &DB);
+    sqlite3* DB;                   // Pointer to database
+    int result =0;                 // variable to store the result of the operation of opening the database
+    result = sqlite3_open(s, &DB);  
     sqlite3_close(DB);
     return 0;
 }
 
-static int createTable(const char* s)
+int createTable(const char* s)
 {
     sqlite3* DB;
     std::string sql= "CREATE TABLE IF NOT EXISTS STOCK_TABLE("
@@ -52,13 +48,22 @@ static int createTable(const char* s)
 }
 
 
-int main()
+int insertData(const char* s)
 {
-    const char* dir ="./stock.db";
-
-    createDB(dir);
-    createTable(dir);
-
-    return 0; 
-
+    sqlite3* DB;
+    char* messageError;
+    int exit = sqlite3_open(s, &DB);
+    std::string sql ("INSERT INTO STOCK_TABLE(ID, NAME) VALUES(1, 'Piso rojo')");
+    exit = sqlite3_exec(DB, sql.c_str(), NULL, 0, &messageError);
+    if (SQLITE_OK != exit)
+    {
+        std::cout <<"ERROR Insert element"<<exit<<std::endl;
+        sqlite3_free (messageError);
+    }
+    else
+    {
+        std::cout <<"SUCCESS Element new record"<<std::endl;            
+    } 
+    return 0;
 }
+
